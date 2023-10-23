@@ -1,0 +1,328 @@
+{
+    "doctors": [
+      {
+        "id": 1,
+        "name": "Dr. John Smith",
+        "specialty": "Cardiologist",
+        "hospital": "City General Hospital",
+        "location": "123 Main Street, Cityville",
+        "phone": "555-123-4567",
+        "email": "john.smith@example.com",
+        "availability": {
+          "Monday": "9:00 AM - 5:00 PM",
+          "Tuesday": "9:00 AM - 5:00 PM",
+          "Wednesday": "9:00 AM - 12:00 PM",
+          "Thursday": "9:00 AM - 5:00 PM",
+          "Friday": "9:00 AM - 5:00 PM"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Dr. Sarah Johnson",
+        "specialty": "Pediatrician",
+        "hospital": "Sunset Pediatrics Clinic",
+        "location": "789 Elm Street, Townsville",
+        "phone": "555-987-6543",
+        "email": "sarah.johnson@example.com",
+        "availability": {
+          "Monday": "8:00 AM - 4:00 PM",
+          "Tuesday": "8:00 AM - 4:00 PM",
+          "Wednesday": "8:00 AM - 12:00 PM",
+          "Thursday": "8:00 AM - 4:00 PM",
+          "Friday": "8:00 AM - 4:00 PM"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Dr. Michael Davis",
+        "specialty": "Dermatologist",
+        "hospital": "SkinCare Clinic",
+        "location": "456 Oak Avenue, Villagetown",
+        "phone": "555-456-7890",
+        "email": "michael.davis@example.com",
+        "availability": {
+          "Monday": "10:00 AM - 6:00 PM",
+          "Tuesday": "10:00 AM - 6:00 PM",
+          "Wednesday": "10:00 AM - 2:00 PM",
+          "Thursday": "10:00 AM - 6:00 PM",
+          "Friday": "10:00 AM - 6:00 PM"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Dr. Lisa Miller",
+        "specialty": "Psychiatrist",
+        "hospital": "Mental Health Center",
+        "location": "123 Pine Street, Woodville",
+        "phone": "555-321-7654",
+        "email": "lisa.miller@example.com",
+        "availability": {
+          "Monday": "9:00 AM - 5:00 PM",
+          "Tuesday": "9:00 AM - 5:00 PM",
+          "Wednesday": "9:00 AM - 1:00 PM",
+          "Thursday": "9:00 AM - 5:00 PM",
+          "Friday": "9:00 AM - 5:00 PM"
+        }
+      },
+      
+    {
+      "id": 5,
+      "name": "Dr. James Wilson",
+      "specialty": "Orthopedist",
+      "hospital": "Bone and Joint Clinic",
+      "location": "456 Maple Avenue, Leafville",
+      "phone": "555-654-3210",
+      "email": "james.wilson@example.com",
+      "availability": {
+        "Monday": "8:00 AM - 4:00 PM",
+        "Tuesday": "8:00 AM - 4:00 PM",
+        "Wednesday": "8:00 AM - 12:00 PM",
+        "Thursday": "8:00 AM - 4:00 PM",
+        "Friday": "8:00 AM - 4:00 PM"
+      }
+    },
+    
+    {
+      "id": 6,
+      "name": "Dr. Jennifer Lopez",
+      "specialty": "Gynecologist",
+      "hospital": "Women's Health Center",
+      "location": "789 Rose Street, Flowerville",
+      "phone": "555-789-0123",
+      "email": "jennifer.lopez@example.com",
+      "availability": {
+        "Monday": "10:00 AM - 6:00 PM",
+        "Tuesday": "10:00 AM - 6:00 PM",
+        "Wednesday":"10:00 AM - 6:00 PM",
+        "Thursday": "10:00 AM - 6:00 PM",
+        "Friday": "10:00 AM - 6:00 PM"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Dr. David Jones",
+      "specialty": "Ophthalmologist",
+      "hospital": "Eye Care Clinic",
+      "location": "123 Cherry Street, Fruitville",
+      "phone": "555-012-3456",
+      "email": "david.jones@example.com",
+      "availability": {
+        "Monday": "10:00 AM - 6:00 PM",
+        "Tuesday": "10:00 AM - 6:00 PM",
+        "Wednesday": "10:00 AM - 6:00 PM",
+        "Thursday": "10:00 AM - 6:00 PM",
+        "Friday": "10:00 AM - 6:00 PM"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Dr. Maria Garcia",
+      "specialty": "Allergist",
+      "hospital": "Allergy and Asthma Clinic",
+      "location": "456 Walnut Street, Nutville",
+      "phone": "555-345-6789",
+      "email": "maria.garcia@example.com",
+      "availability": {
+        "Monday": "10:00 AM - 6:00 PM",
+        "Tuesday":"10:00 AM - 6:00 PM",
+        "Wednesday": "10:00 AM - 6:00 PM",
+        "Thursday": "10:00 AM - 6:00 PM",
+        "Friday": "10:00 AM - 6:00 PM"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Dr. Robert Smith",
+      "specialty": "Dentist",
+      "hospital": "Smile Dental Clinic",
+      "location": "789 Lily Street, Flower ville",
+      "phone": "555-678-9012",
+      "email": "robert.smith@example.com",
+      "availability": {
+        "Monday":"10:00 AM - 6:00 PM",
+        "Tuesday":"10:00 AM - 6:00 PM",
+        "Wednesday": "10:00 AM - 6:00 PM",
+        "Thursday": "10:00 AM - 6:00 PM",
+        "Friday": "10:00 AM - 6:00 PM"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Dr. Laura Williams",
+      "specialty": "Endocrinologist",
+      "hospital": "Diabetes and Thyroid Clinic",
+      "location": "123 Apple Street, Fruitville",
+      "phone": "555-901-2345",
+      "email": "laura.williams@example.com",
+      "availability": {
+          "Monday": "10:00 AM - 6:00 PM",
+          "Tuesday": "10:00 AM - 6:00 PM",
+          "Wednesday": "10:00 AM - 6:00 PM",
+          "Thursday": "10:00 AM - 6:00 PM",
+          "Friday":"10:00 AM - 6:00 PM"
+      }
+  },
+  {
+      "id": 11,
+      "name": "Dr. Mark Johnson",
+      "specialty": "Urologist",
+      "hospital": "Kidney and Bladder Clinic",
+      "location": "456 Peach Street, Fruitville",
+      "phone": "555-234-5678",
+      "email": "mark.johnson@example.com",
+      "availability": {
+          "Monday": "10:00 AM - 6:00 PM",
+          "Tuesday": "10:00 AM - 6:00 PM",
+          "Wednesday": "10:00 AM - 6:00 PM",
+          "Thursday": "10:00 AM - 6:00 PM",
+          "Friday": "10:00 AM - 6:00 PM"
+      }
+  },
+  {
+    "id": 12,
+    "name": "Dr. Sarah Anderson",
+    "specialty": "Cardiologist",
+    "hospital": "Heart Health Center",
+    "location": "789 Cherry Lane, Cityville",
+    "phone": "555-345-6789",
+    "email": "sarah.anderson@example.com",
+    "availability": {
+        "Monday": "10:00 AM - 6:00 PM",
+        "Tuesday":"10:00 AM - 6:00 PM",
+        "Wednesday": "10:00 AM - 6:00 PM",
+        "Thursday": "10:00 AM - 6:00 PM",
+        "Friday": "10:00 AM - 6:00 PM"
+    }
+},
+{
+    "id": 13,
+    "name": "Dr. John Smith",
+    "specialty": "Dermatologist",
+    "hospital": "Skin Care Clinic",
+    "location": "101 Oak Street, Townsville",
+    "phone": "555-987-6543",
+    "email": "john.smith@example.com",
+    "availability": {
+        "Monday": "10:00 AM - 6:00 PM",
+        "Tuesday": "10:00 AM - 6:00 PM",
+        "Wednesday": "10:00 AM - 6:00 PM",
+        "Thursday": "10:00 AM - 6:00 PM",
+        "Friday": "10:00 AM - 6:00 PM"
+    }
+},
+{
+  "id": 14,
+  "name": "Dr. Emily Davis",
+  "specialty": "Pediatrician",
+  "hospital": "Child Health Clinic",
+  "location": "567 Elm Street, Townsville",
+  "phone": "555-876-5432",
+  "email": "emily.davis@example.com",
+  "availability": {
+      "Monday": "10:00 AM - 6:00 PM",
+      "Tuesday": "10:00 AM - 6:00 PM",
+      "Wednesday": "10:00 AM - 6:00 PM",
+      "Thursday": "10:00 AM - 6:00 PM",
+      "Friday": "10:00 AM - 6:00 PM"
+  }
+},
+{
+  "id": 15,
+  "name": "Dr. Michael Johnson",
+  "specialty": "Orthopedic Surgeon",
+  "hospital": "OrthoCare Hospital",
+  "location": "222 Oak Lane, Cityville",
+  "phone": "555-789-1234",
+  "email": "michael.johnson@example.com",
+  "availability": {
+      "Monday": "10:00 AM - 6:00 PM",
+      "Tuesday": "10:00 AM - 6:00 PM",
+      "Wednesday": "10:00 AM - 6:00 PM",
+      "Thursday": "10:00 AM - 6:00 PM",
+      "Friday": "10:00 AM - 6:00 PM"
+  }
+},
+{
+  "id": 16,
+  "name": "Dr. Jessica Lee",
+  "specialty": "Gynecologist",
+  "hospital": "Women's Health Center",
+  "location": "321 Willow Lane, Cityville",
+  "phone": "555-654-3210",
+  "email": "jessica.lee@example.com",
+  "availability": {
+    "Monday": "10:00 AM - 6:00 PM",
+    "Tuesday": "10:00 AM - 6:00 PM",
+    "Wednesday": "10:00 AM - 6:00 PM",
+    "Thursday": "10:00 AM - 6:00 PM",
+    "Friday": "10:00 AM - 6:00 PM"
+}
+},
+{
+  "id": 17,
+  "name": "Dr. David Brown",
+  "specialty": "Neurologist",
+  "hospital": "Brain Health Institute",
+  "location": "999 Pine Street, Townsville",
+  "phone": "555-321-9876",
+  "email": "david.brown@example.com",
+  "availability": {
+    "Monday": "10:00 AM - 6:00 PM",
+    "Tuesday": "10:00 AM - 6:00 PM",
+    "Wednesday": "10:00 AM - 6:00 PM",
+    "Thursday": "10:00 AM - 6:00 PM",
+    "Friday": "10:00 AM - 6:00 PM"
+}
+},
+{
+  "id": 18,
+  "name": "Dr. Susan White",
+  "specialty": "Ophthalmologist",
+  "hospital": "Eye Care Clinic",
+  "location": "456 Oak Avenue, Cityville",
+  "phone": "555-987-6541",
+  "email": "susan.white@example.com",
+  "availability": {
+    "Monday": "10:00 AM - 6:00 PM",
+    "Tuesday": "10:00 AM - 6:00 PM",
+    "Wednesday": "10:00 AM - 6:00 PM",
+    "Thursday": "10:00 AM - 6:00 PM",
+    "Friday": "10:00 AM - 6:00 PM"
+}
+},
+{
+  "id": 19,
+  "name": "Dr. James Wilson",
+  "specialty": "General Practitioner",
+  "hospital": "City Health Clinic",
+  "location": "777 Maple Street, Townsville",
+  "phone": "555-123-4567",
+  "email": "james.wilson@example.com",
+  "availability": {
+    "Monday": "10:00 AM - 6:00 PM",
+    "Tuesday": "10:00 AM - 6:00 PM",
+    "Wednesday": "10:00 AM - 6:00 PM",
+    "Thursday": "10:00 AM - 6:00 PM",
+    "Friday": "10:00 AM - 6:00 PM"
+}
+},
+{
+  "id": 20,
+  "name": "Dr. Maria Rodriguez",
+  "specialty": "Psychiatrist",
+  "hospital": "Mental Health Center",
+  "location": "888 Elm Avenue, Cityville",
+  "phone": "555-234-5670",
+  "email": "maria.rodriguez@example.com",
+  "availability": {
+    "Monday": "10:00 AM - 6:00 PM",
+    "Tuesday": "10:00 AM - 6:00 PM",
+    "Wednesday": "10:00 AM - 6:00 PM",
+    "Thursday": "10:00 AM - 6:00 PM",
+    "Friday": "10:00 AM - 6:00 PM"
+}
+}
+      
+    ]
+  }
+  
