@@ -1,328 +1,275 @@
 {
-    "doctors": [
-      {
-        "id": 1,
-        "name": "Dr. John Smith",
-        "specialty": "Cardiologist",
-        "hospital": "City General Hospital",
-        "location": "123 Main Street, Cityville",
-        "phone": "555-123-4567",
-        "email": "john.smith@example.com",
-        "availability": {
-          "Monday": "9:00 AM - 5:00 PM",
-          "Tuesday": "9:00 AM - 5:00 PM",
-          "Wednesday": "9:00 AM - 12:00 PM",
-          "Thursday": "9:00 AM - 5:00 PM",
-          "Friday": "9:00 AM - 5:00 PM"
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. John Smith",
+      "specialty": "Cardiologist",
+      "hospital": "City General Hospital",
+      "address": "123 Main Street, Cityville, USA",
+      "phone": "+1 (555) 123-4567",
+      "email": "dr.johnsmith@example.com",
+      "image_url": "data:image/jpeg;base64,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", 
+      "available_days": ["Monday", "Wednesday", "Friday"],
+      "available_hours": "9:00 am - 5:00 pm",
+      "rating": 4.8,
+      "reviews": [
+        {
+          "patient_name": "Jane Doe",
+          "date": "September 15, 2023",
+          "rating": 5,
+          "comments": "Dr. Smith is very knowledgeable and caring. He explained my condition in detail and answered all my questions."
+        },
+        {
+          "patient_name": "John Johnson",
+          "date": "August 28, 2023",
+          "rating": 4.5,
+          "comments": "I had a great experience with Dr. Smith. He made me feel comfortable and provided excellent care."
         }
-      },
-      {
-        "id": 2,
-        "name": "Dr. Sarah Johnson",
-        "specialty": "Pediatrician",
-        "hospital": "Sunset Pediatrics Clinic",
-        "location": "789 Elm Street, Townsville",
-        "phone": "555-987-6543",
-        "email": "sarah.johnson@example.com",
-        "availability": {
-          "Monday": "8:00 AM - 4:00 PM",
-          "Tuesday": "8:00 AM - 4:00 PM",
-          "Wednesday": "8:00 AM - 12:00 PM",
-          "Thursday": "8:00 AM - 4:00 PM",
-          "Friday": "8:00 AM - 4:00 PM"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dr. Sarah Williams",
+      "specialty": "Pediatrician",
+      "hospital": "Children's Hospital",
+      "address": "456 Oak Avenue, Kidstown, USA",
+      "phone": "+1 (555) 987-6543",
+      "email": "dr.sarahwilliams@example.com",
+      "image_url": "https://th.bing.com/th?id=OIP.sIMaRhEHogXQcRyPIRNyMQHaLI&w=203&h=306&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2", 
+      "available_days": ["Tuesday", "Thursday", "Saturday"],
+      "available_hours": "10:00 am - 6:00 pm",
+      "rating": 4.9,
+      "reviews": [
+        {
+          "patient_name": "Emily Smith",
+          "date": "October 5, 2023",
+          "rating": 5,
+          "comments": "Dr. Williams is amazing with kids. She's patient, kind, and always puts my child at ease during appointments."
+        },
+        {
+          "patient_name": "Michael Brown",
+          "date": "September 22, 2023",
+          "rating": 4.8,
+          "comments": "I highly recommend Dr. Williams. She's a caring and knowledgeable pediatrician who genuinely cares about her young patients."
         }
-      },
-      {
-        "id": 3,
-        "name": "Dr. Michael Davis",
-        "specialty": "Dermatologist",
-        "hospital": "SkinCare Clinic",
-        "location": "456 Oak Avenue, Villagetown",
-        "phone": "555-456-7890",
-        "email": "michael.davis@example.com",
-        "availability": {
-          "Monday": "10:00 AM - 6:00 PM",
-          "Tuesday": "10:00 AM - 6:00 PM",
-          "Wednesday": "10:00 AM - 2:00 PM",
-          "Thursday": "10:00 AM - 6:00 PM",
-          "Friday": "10:00 AM - 6:00 PM"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dr. Lisa Chang",
+      "specialty": "Dermatologist",
+      "hospital": "SkinCare Clinic",
+      "address": "789 Elm Street, Skintown, USA",
+      "phone": "+1 (555) 234-5678",
+      "email": "dr.lisachang@example.com",
+      "image_url": "https://th.bing.com/th/id/OIP.MHxYih57iYiQNOGV2OFtQwHaLH?w=133&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7", 
+      "available_days": ["Monday", "Wednesday", "Friday"],
+      "available_hours": "8:30 am - 4:30 pm",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "patient_name": "Mark Johnson",
+          "date": "October 10, 2023",
+          "rating": 4.5,
+          "comments": "Dr. Chang is an expert in dermatology. She helped me with my skin condition, and I'm very satisfied with the results."
+        },
+        {
+          "patient_name": "Jennifer Lee",
+          "date": "September 18, 2023",
+          "rating": 4.8,
+          "comments": "I had a great experience with Dr. Chang. She's friendly and professional. I recommend her to anyone looking for a dermatologist."
         }
-      },
-      {
-        "id": 4,
-        "name": "Dr. Lisa Miller",
-        "specialty": "Psychiatrist",
-        "hospital": "Mental Health Center",
-        "location": "123 Pine Street, Woodville",
-        "phone": "555-321-7654",
-        "email": "lisa.miller@example.com",
-        "availability": {
-          "Monday": "9:00 AM - 5:00 PM",
-          "Tuesday": "9:00 AM - 5:00 PM",
-          "Wednesday": "9:00 AM - 1:00 PM",
-          "Thursday": "9:00 AM - 5:00 PM",
-          "Friday": "9:00 AM - 5:00 PM"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dr. Michael Davis",
+      "specialty": "Orthopedic Surgeon",
+      "hospital": "OrthoCare Hospital",
+      "address": "101 Pine Street, Jointville, USA",
+      "phone": "+1 (555) 345-6789",
+      "email": "dr.michaeldavis@example.com",
+      "image_url": "https://th.bing.com/th/id/OIP.RPRpZ0mTLLrHDqxz4rhZuwHaHp?w=157&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "available_days": ["Tuesday", "Thursday", "Saturday"],
+      "available_hours": "9:30 am - 5:30 pm",
+      "rating": 4.6,
+      "reviews": [
+        {
+          "patient_name": "Robert Smith",
+          "date": "October 8, 2023",
+          "rating": 4.5,
+          "comments": "Dr. Davis is an excellent orthopedic surgeon. He performed my knee surgery, and I'm grateful for his expertise."
+        },
+        {
+          "patient_name": "Laura Johnson",
+          "date": "September 20, 2023",
+          "rating": 4.7,
+          "comments": "I had a positive experience with Dr. Davis. He explained my treatment options clearly and helped me make informed decisions."
         }
-      },
-      
+      ]
+    },
     {
       "id": 5,
-      "name": "Dr. James Wilson",
-      "specialty": "Orthopedist",
-      "hospital": "Bone and Joint Clinic",
-      "location": "456 Maple Avenue, Leafville",
-      "phone": "555-654-3210",
-      "email": "james.wilson@example.com",
-      "availability": {
-        "Monday": "8:00 AM - 4:00 PM",
-        "Tuesday": "8:00 AM - 4:00 PM",
-        "Wednesday": "8:00 AM - 12:00 PM",
-        "Thursday": "8:00 AM - 4:00 PM",
-        "Friday": "8:00 AM - 4:00 PM"
-      }
+      "name": "Dr. Emily Anderson",
+      "specialty": "Obstetrician-Gynecologist",
+      "hospital": "Women's Wellness Center",
+      "address": "567 Maple Avenue, Maternityville, USA",
+      "phone": "+1 (555) 456-7890",
+      "email": "dr.emilyanderson@example.com",
+      "image_url": "https://th.bing.com/th/id/OIP.Of1m8q2q5J6my51mKxKlYgHaLH?w=128&h=191&c=7&r=0&o=5&dpr=1.3&pid=1.7", 
+      "available_days": ["Monday", "Wednesday", "Friday"],
+      "available_hours": "8:00 am - 4:00 pm",
+      "rating": 4.9,
+      "reviews": [
+        {
+          "patient_name": "Lisa Brown",
+          "date": "October 12, 2023",
+          "rating": 5,
+          "comments": "Dr. Anderson is an excellent OB-GYN. She provides compassionate care and is highly knowledgeable in her field."
+        },
+        {
+          "patient_name": "David Wilson",
+          "date": "September 25, 2023",
+          "rating": 4.8,
+          "comments": "I trust Dr. Anderson with my healthcare needs. She's attentive, professional, and truly cares about her patients."
+        }
+      ]
     },
-    
     {
       "id": 6,
-      "name": "Dr. Jennifer Lopez",
-      "specialty": "Gynecologist",
-      "hospital": "Women's Health Center",
-      "location": "789 Rose Street, Flowerville",
-      "phone": "555-789-0123",
-      "email": "jennifer.lopez@example.com",
-      "availability": {
-        "Monday": "10:00 AM - 6:00 PM",
-        "Tuesday": "10:00 AM - 6:00 PM",
-        "Wednesday":"10:00 AM - 6:00 PM",
-        "Thursday": "10:00 AM - 6:00 PM",
-        "Friday": "10:00 AM - 6:00 PM"
-      }
+      "name": "Dr. James Robinson",
+      "specialty": "Neurologist",
+      "hospital": "NeuroCare Center",
+      "address": "321 Oakwood Drive, Brainville, USA",
+      "phone": "+1 (555) 567-8901",
+      "email": "dr.jamesrobinson@example.com",
+      "image_url": "https://th.bing.com/th?q=Funny+Doctor&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247&thvar=defctrl",
+      "available_days": ["Tuesday", "Thursday", "Saturday"],
+      "available_hours": "10:30 am - 6:30 pm",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "patient_name": "Sarah Adams",
+          "date": "October 7, 2023",
+          "rating": 4.5,
+          "comments": "Dr. Robinson is a knowledgeable neurologist. He took the time to explain my condition and treatment options."
+        },
+        {
+          "patient_name": "Daniel Moore",
+          "date": "September 23, 2023",
+          "rating": 4.7,
+          "comments": "I'm satisfied with my experience at NeuroCare. Dr. Robinson and his team are professional and caring."
+        }
+      ]
     },
     {
       "id": 7,
-      "name": "Dr. David Jones",
-      "specialty": "Ophthalmologist",
-      "hospital": "Eye Care Clinic",
-      "location": "123 Cherry Street, Fruitville",
-      "phone": "555-012-3456",
-      "email": "david.jones@example.com",
-      "availability": {
-        "Monday": "10:00 AM - 6:00 PM",
-        "Tuesday": "10:00 AM - 6:00 PM",
-        "Wednesday": "10:00 AM - 6:00 PM",
-        "Thursday": "10:00 AM - 6:00 PM",
-        "Friday": "10:00 AM - 6:00 PM"
-      }
+      "name": "Dr. Maria Garcia",
+      "specialty": "Family Physician",
+      "hospital": "Family Care Clinic",
+      "address": "789 Cedar Lane, Familytown, USA",
+      "phone": "+1 (555) 678-9012",
+      "email": "dr.mariagarcia@example.com",
+      "image_url": "https://th.bing.com/th/id/OIP.P1IfJNdtz7GmKkfPqR2yNAHaIO?w=183&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7", 
+      "available_days": ["Monday", "Wednesday", "Friday"],
+      "available_hours": "9:00 am - 5:00 pm",
+      "rating": 4.8,
+      "reviews": [
+        {
+          "patient_name": "Carlos Hernandez",
+          "date": "October 9, 2023",
+          "rating": 5,
+          "comments": "Dr. Garcia is a caring family physician. She always listens to my concerns and provides great medical advice."
+        },
+        {
+          "patient_name": "Linda Martinez",
+          "date": "September 21, 2023",
+          "rating": 4.6,
+          "comments": "I've been a patient of Dr. Garcia for years. She's a dedicated and compassionate doctor who I trust completely."
+        }
+      ]
     },
     {
       "id": 8,
-      "name": "Dr. Maria Garcia",
-      "specialty": "Allergist",
-      "hospital": "Allergy and Asthma Clinic",
-      "location": "456 Walnut Street, Nutville",
-      "phone": "555-345-6789",
-      "email": "maria.garcia@example.com",
-      "availability": {
-        "Monday": "10:00 AM - 6:00 PM",
-        "Tuesday":"10:00 AM - 6:00 PM",
-        "Wednesday": "10:00 AM - 6:00 PM",
-        "Thursday": "10:00 AM - 6:00 PM",
-        "Friday": "10:00 AM - 6:00 PM"
-      }
+      "name": "Dr. Robert Taylor",
+      "specialty": "Ophthalmologist",
+      "hospital": "EyeCare Center",
+      "address": "456 Vision Street, Eyetown, USA",
+      "phone": "+1 (555) 789-0123",
+      "email": "dr.roberttaylor@example.com",
+      "image_url": "https://th.bing.com/th/id/OIP.GVc7hr9r6cgNAoIqF67UrQHaIk?w=163&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7", 
+      "available_days": ["Tuesday", "Thursday", "Saturday"],
+      "available_hours": "8:30 am - 4:30 pm",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "patient_name": "Karen Wilson",
+          "date": "October 11, 2023",
+          "rating": 4.5,
+          "comments": "Dr. Taylor is a skilled ophthalmologist. He performed my eye surgery with precision, and I'm very satisfied."
+        },
+        {
+          "patient_name": "William Davis",
+          "date": "September 24, 2023",
+          "rating": 4.7,
+          "comments": "I trust Dr. Taylor with my eye care. He's professional and takes the time to explain procedures and options."
+        }
+      ]
     },
     {
       "id": 9,
-      "name": "Dr. Robert Smith",
-      "specialty": "Dentist",
-      "hospital": "Smile Dental Clinic",
-      "location": "789 Lily Street, Flower ville",
-      "phone": "555-678-9012",
-      "email": "robert.smith@example.com",
-      "availability": {
-        "Monday":"10:00 AM - 6:00 PM",
-        "Tuesday":"10:00 AM - 6:00 PM",
-        "Wednesday": "10:00 AM - 6:00 PM",
-        "Thursday": "10:00 AM - 6:00 PM",
-        "Friday": "10:00 AM - 6:00 PM"
-      }
+      "name": "Dr. Susan Miller",
+      "specialty": "Psychiatrist",
+      "hospital": "Mental Health Center",
+      "address": "101 Mind Avenue, Psychville, USA",
+      "phone": "+1 (555) 890-1234",
+      "email": "dr.susanmiller@example.com",
+      "image_url": "https://th.bing.com/th/id/OIP.lszqrLa5-H5uWsna7ga5hAHaLH?w=125&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7", 
+      "available_days": ["Monday", "Wednesday", "Friday"],
+      "available_hours": "10:00 am - 6:00 pm",
+      "rating": 4.9,
+      "reviews": [
+        {
+          "patient_name": "Jennifer Adams",
+          "date": "October 6, 2023",
+          "rating": 5,
+          "comments": "Dr. Miller is a compassionate psychiatrist. She's helped me manage my mental health effectively."
+        },
+        {
+          "patient_name": "Michael Brown",
+          "date": "September 19, 2023",
+          "rating": 4.8,
+          "comments": "I'm grateful for Dr. Miller's support. She's a great listener and provides valuable insights."
+        }
+      ]
     },
     {
       "id": 10,
-      "name": "Dr. Laura Williams",
-      "specialty": "Endocrinologist",
-      "hospital": "Diabetes and Thyroid Clinic",
-      "location": "123 Apple Street, Fruitville",
-      "phone": "555-901-2345",
-      "email": "laura.williams@example.com",
-      "availability": {
-          "Monday": "10:00 AM - 6:00 PM",
-          "Tuesday": "10:00 AM - 6:00 PM",
-          "Wednesday": "10:00 AM - 6:00 PM",
-          "Thursday": "10:00 AM - 6:00 PM",
-          "Friday":"10:00 AM - 6:00 PM"
-      }
-  },
-  {
-      "id": 11,
-      "name": "Dr. Mark Johnson",
-      "specialty": "Urologist",
-      "hospital": "Kidney and Bladder Clinic",
-      "location": "456 Peach Street, Fruitville",
-      "phone": "555-234-5678",
-      "email": "mark.johnson@example.com",
-      "availability": {
-          "Monday": "10:00 AM - 6:00 PM",
-          "Tuesday": "10:00 AM - 6:00 PM",
-          "Wednesday": "10:00 AM - 6:00 PM",
-          "Thursday": "10:00 AM - 6:00 PM",
-          "Friday": "10:00 AM - 6:00 PM"
-      }
-  },
-  {
-    "id": 12,
-    "name": "Dr. Sarah Anderson",
-    "specialty": "Cardiologist",
-    "hospital": "Heart Health Center",
-    "location": "789 Cherry Lane, Cityville",
-    "phone": "555-345-6789",
-    "email": "sarah.anderson@example.com",
-    "availability": {
-        "Monday": "10:00 AM - 6:00 PM",
-        "Tuesday":"10:00 AM - 6:00 PM",
-        "Wednesday": "10:00 AM - 6:00 PM",
-        "Thursday": "10:00 AM - 6:00 PM",
-        "Friday": "10:00 AM - 6:00 PM"
+      "name": "Dr. Laura Wilson",
+      "specialty": "Dentist",
+      "hospital": "Smile Dental Clinic",
+      "address": "567 Tooth Lane, Dentaltown, USA",
+      "phone": "+1 (555) 123-4567",
+      "email": "dr.laurawilson@example.com",
+      "image_url": "https://th.bing.com/th/id/OIP.qmnhw01CEAHPF3WgNSAWywHaLC?w=123&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7", 
+      "available_days": ["Tuesday", "Thursday", "Saturday"],
+      "available_hours": "9:00 am - 5:00 pm",
+      "rating": 4.6,
+      "reviews": [
+        {
+          "patient_name": "John Smith",
+          "date": "October 14, 2023",
+          "rating": 4.5,
+          "comments": "Dr. Wilson is an excellent dentist. She's gentle, and my dental visits are always comfortable."
+        },
+        {
+          "patient_name": "Emily Davis",
+          "date": "September 26, 2023",
+          "rating": 4.7,
+          "comments": "I'm happy with the care I receive at Smile Dental Clinic. Dr. Wilson and her staff are friendly and skilled."
+        }
+      ]
     }
-},
-{
-    "id": 13,
-    "name": "Dr. John Smith",
-    "specialty": "Dermatologist",
-    "hospital": "Skin Care Clinic",
-    "location": "101 Oak Street, Townsville",
-    "phone": "555-987-6543",
-    "email": "john.smith@example.com",
-    "availability": {
-        "Monday": "10:00 AM - 6:00 PM",
-        "Tuesday": "10:00 AM - 6:00 PM",
-        "Wednesday": "10:00 AM - 6:00 PM",
-        "Thursday": "10:00 AM - 6:00 PM",
-        "Friday": "10:00 AM - 6:00 PM"
-    }
-},
-{
-  "id": 14,
-  "name": "Dr. Emily Davis",
-  "specialty": "Pediatrician",
-  "hospital": "Child Health Clinic",
-  "location": "567 Elm Street, Townsville",
-  "phone": "555-876-5432",
-  "email": "emily.davis@example.com",
-  "availability": {
-      "Monday": "10:00 AM - 6:00 PM",
-      "Tuesday": "10:00 AM - 6:00 PM",
-      "Wednesday": "10:00 AM - 6:00 PM",
-      "Thursday": "10:00 AM - 6:00 PM",
-      "Friday": "10:00 AM - 6:00 PM"
-  }
-},
-{
-  "id": 15,
-  "name": "Dr. Michael Johnson",
-  "specialty": "Orthopedic Surgeon",
-  "hospital": "OrthoCare Hospital",
-  "location": "222 Oak Lane, Cityville",
-  "phone": "555-789-1234",
-  "email": "michael.johnson@example.com",
-  "availability": {
-      "Monday": "10:00 AM - 6:00 PM",
-      "Tuesday": "10:00 AM - 6:00 PM",
-      "Wednesday": "10:00 AM - 6:00 PM",
-      "Thursday": "10:00 AM - 6:00 PM",
-      "Friday": "10:00 AM - 6:00 PM"
-  }
-},
-{
-  "id": 16,
-  "name": "Dr. Jessica Lee",
-  "specialty": "Gynecologist",
-  "hospital": "Women's Health Center",
-  "location": "321 Willow Lane, Cityville",
-  "phone": "555-654-3210",
-  "email": "jessica.lee@example.com",
-  "availability": {
-    "Monday": "10:00 AM - 6:00 PM",
-    "Tuesday": "10:00 AM - 6:00 PM",
-    "Wednesday": "10:00 AM - 6:00 PM",
-    "Thursday": "10:00 AM - 6:00 PM",
-    "Friday": "10:00 AM - 6:00 PM"
+    
+  ]
 }
-},
-{
-  "id": 17,
-  "name": "Dr. David Brown",
-  "specialty": "Neurologist",
-  "hospital": "Brain Health Institute",
-  "location": "999 Pine Street, Townsville",
-  "phone": "555-321-9876",
-  "email": "david.brown@example.com",
-  "availability": {
-    "Monday": "10:00 AM - 6:00 PM",
-    "Tuesday": "10:00 AM - 6:00 PM",
-    "Wednesday": "10:00 AM - 6:00 PM",
-    "Thursday": "10:00 AM - 6:00 PM",
-    "Friday": "10:00 AM - 6:00 PM"
-}
-},
-{
-  "id": 18,
-  "name": "Dr. Susan White",
-  "specialty": "Ophthalmologist",
-  "hospital": "Eye Care Clinic",
-  "location": "456 Oak Avenue, Cityville",
-  "phone": "555-987-6541",
-  "email": "susan.white@example.com",
-  "availability": {
-    "Monday": "10:00 AM - 6:00 PM",
-    "Tuesday": "10:00 AM - 6:00 PM",
-    "Wednesday": "10:00 AM - 6:00 PM",
-    "Thursday": "10:00 AM - 6:00 PM",
-    "Friday": "10:00 AM - 6:00 PM"
-}
-},
-{
-  "id": 19,
-  "name": "Dr. James Wilson",
-  "specialty": "General Practitioner",
-  "hospital": "City Health Clinic",
-  "location": "777 Maple Street, Townsville",
-  "phone": "555-123-4567",
-  "email": "james.wilson@example.com",
-  "availability": {
-    "Monday": "10:00 AM - 6:00 PM",
-    "Tuesday": "10:00 AM - 6:00 PM",
-    "Wednesday": "10:00 AM - 6:00 PM",
-    "Thursday": "10:00 AM - 6:00 PM",
-    "Friday": "10:00 AM - 6:00 PM"
-}
-},
-{
-  "id": 20,
-  "name": "Dr. Maria Rodriguez",
-  "specialty": "Psychiatrist",
-  "hospital": "Mental Health Center",
-  "location": "888 Elm Avenue, Cityville",
-  "phone": "555-234-5670",
-  "email": "maria.rodriguez@example.com",
-  "availability": {
-    "Monday": "10:00 AM - 6:00 PM",
-    "Tuesday": "10:00 AM - 6:00 PM",
-    "Wednesday": "10:00 AM - 6:00 PM",
-    "Thursday": "10:00 AM - 6:00 PM",
-    "Friday": "10:00 AM - 6:00 PM"
-}
-}
-      
-    ]
-  }
-  
